@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collectors</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body onload="startUp()">
+    <div class="hearder">
+        <h1>Crystal Collector!</h1>
+
+    </div>
+
+    <div class="instruction">
+        <h2> Here is how you play the game</h2>
+        <ol>
+            <li> You will be given a random number at the start of the game.</li>
+            <li> There are four crystals below. By clicking on the crystal,
+                you will add a specific amount of points to your total score. </li>
+            <li> You win the game by matching your total score to random number,
+                you lose the game if your total sore goes above the randome number. </li>
+            <li> The value of each crystal is hidden from you until you click on it.</li>
+            <li> Each time when the game starts, the game will change the value of each crystals.</li>
+
+        </ol>
+    </div>
+
+    <div class="randomNumberToMatch">
+        Number to Match: <span id="randomNumber"> </span>
+    </div>
+
+    <div class="winsAndLosses">
+        <p>Wins: <span id="Wins"> </span></p>
+        <p>Losses: <span id="Losses"> </span></p>
+    </div>
+
+    <div class="Crystal">
+        <img id="redCrystal" src="./images/Red_crystal.JPG" width="100" height="100">
+        <img id="blueCrystal" src="./images/Blue_crystal.jpg" width="100" height="100">
+        <img id="yellowCrystal" src="./images/Yellow_crystal.jpg" width="100" height="100">
+        <img id="greenCrystal" src="./images/green_crystal..jpg" width="100" height="100">
+    </div>
+
+    <div class="totalScore">
+        <p>Your total score is:
+            <span id="userScore"></span>
+        </p>
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/game.js"></script>
+</body>
+</html>
