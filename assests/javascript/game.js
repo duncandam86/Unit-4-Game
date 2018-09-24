@@ -12,8 +12,8 @@ var blueCrystalPoint;
 $('#blueCrystal').html(blueCrystalPoint);
 var yellowCrystalPoint;
 $('#yellowCrystal').html(yellowCrystalPoint);
-var grennCrystalPoint;
-$('greenCrystal').html(grennCrystalPoint);
+var greenCrystalPoint;
+$('greenCrystal').html(greenCrystalPoint);
 
 // create variable to count win, losses and total score from user
 var wins = 0;
