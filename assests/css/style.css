@@ -24,8 +24,9 @@ h1{
     margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 20px;
+    margin-right: 70px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
@@ -61,7 +62,7 @@ hr{
     font-size: 18px;
 }
 .Crystal{
-    margin-left: 320px;
+    margin-left: 50px;
     margin-top: 30px;
 }
 
@@ -69,10 +70,66 @@ hr{
     display: block;
     color: black;
     width: 450px;
-    margin-left: 470px;
+    margin-left: 50px;
+    margin-top: 10px;
     font-size: 30px;
+    color: red;
 }
+/*
+  These rules take effect when the browser's width is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        background-color: salmon;
+        color:blue;
+    }
+    
+    .instruction{
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 18px;
+    }
+    .randomNumberToMatch{
+        display: block;
+        float: left;
+        background-color: green;
+        width: 200px;
+        height: 50px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 25px 0px 0px 22px;
+        font-size: 18px;
+    }
 
+    .winsAndLosses{
+        float: right;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 50px;
+        background-color: green;
+        padding: 25px 0px 20px 22px;
+        font-size: 18px;
+    }
+    .totalScore{
+        display: block;
+        color: black;
+        width: 450px;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 25px;
+        color: red;
+    }
+} 
+ 
 /*
   These rules take effect when the browser's width is either 640px or less.
 */
@@ -107,7 +164,7 @@ hr{
     hr{
         text-align: center;
         height: 2.5px;
-        width: 90%;
+        width: 95%;
         background-color: black;  
         border: none;
     }
@@ -162,3 +219,94 @@ hr{
         margin-left: 90px;
         margin-top: none;
     }
+}
+/*
+  These rules take effect when the browser's width is either 360px or less.
+*/
+@media screen and (max-width: 360px) {
+    .header {
+        text-align: center;
+        width: 360px;
+        height: 100px;
+        display: block;
+        background-color: salmon;
+        color:blue;
+    }
+    
+    h1{
+        padding: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    .instruction{
+        display: block;
+        width: 90%;
+        margin-left: 20px;
+        margin-right:20px;
+        text-align: justify;
+        font-size: 13px;
+    
+    }
+    
+    hr{
+        text-align: center;
+        height: 2.5px;
+        width: 90%;
+        background-color: black;  
+        border: none;
+    }
+    
+    .randomNumberToMatch{
+        position: absolute;
+        background-color: green;
+        width: 80px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .winsAndLosses{
+        float: right;
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .Crystal{
+        width: 300px;
+        height: 80px;
+        display: block;
+        position: relative;
+        margin-left: 50px;
+        margin-top: 20px;
+        padding: none;
+    }
+    #redCrystal{
+        width: 60px;
+        height: 60px;
+    }
+    #blueCrystal{
+        width: 60px;
+        height: 60px;
+    }
+    #yellowCrystal{
+        width: 60px;
+        height: 60px;
+    }
+    #greenCrystal{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .totalScore{
+        display: block;
+        color: black;
+        width: 160px;
+        font-size: 15px;
+        margin-left: 90px;
+        padding: none;
+    }
+}
