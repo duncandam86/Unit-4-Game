@@ -135,6 +135,7 @@ hr{
         position: relative;
         margin-left: 50px;
         margin-top: 20px;
+        padding: none;
     }
     #redCrystal{
         width: 60px;
@@ -156,6 +157,8 @@ hr{
     .totalScore{
         display: block;
         color: black;
-        width: 120px;
-        font-size: 15px;
+        width: 200px;
+        font-size: 20px;
+        margin-left: 90px;
+        margin-top: none;
     }
