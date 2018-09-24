@@ -88,7 +88,7 @@ hr{
     }
     
     .instruction{
-        display: inline-block;
+        display: block;
         margin-top: 20px;
         margin-left: 50px;
         margin-right: 50px;
@@ -218,6 +218,7 @@ hr{
         font-size: 20px;
         margin-left: 90px;
         margin-top: none;
+        color: red;
     }
 }
 /*
@@ -308,5 +309,6 @@ hr{
         font-size: 15px;
         margin-left: 90px;
         padding: none;
+        color:red
     }
 }
