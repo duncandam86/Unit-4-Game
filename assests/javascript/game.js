@@ -1,3 +1,4 @@
+
 // create variable for random number 
 var randomNumber;
 // grab element from html document
@@ -23,24 +24,30 @@ $('#Wins').html(wins);
 $('#Losses').html(losses);
 $('#userScore').html(totalScore);
 
-//create function to generate random number 
-var randomNumber = Math.floor(Math.random() * 120 + 18) // generating numbers between 18 and 138
-
-//create function to generate random points for each crystal between 1 and 10
-var redCrystalPoint = Math.floor(Math.random() * 9 + 1);
-var blueCrystalPoint = Math.floor(Math.random() * 9 + 1);
-var yellowCrystalPoint = Math.floor(Math.random() * 9 + 1);
-var greenCrystalPoint = Math.floor(Math.random() * 9 + 1);
-
-//create function startUp function for the game
 function startUp() {
+    //create function to generate random number 
+    randomNumber = Math.floor(Math.random() * 120 + 18) // generating numbers between 18 and 138
+
+    //create function to generate random points for each crystal between 1 and 10
+    redCrystalPoint = Math.floor(Math.random() * 9 + 1);
+    blueCrystalPoint = Math.floor(Math.random() * 9 + 1);
+    yellowCrystalPoint = Math.floor(Math.random() * 9 + 1);
+    greenCrystalPoint = Math.floor(Math.random() * 9 + 1);
+
+    //calling numbers
     randomNumber;
     console.log(randomNumber);
     $('#randomNumber').html(randomNumber);
     redCrystalPoint;
+    console.log(redCrystalPoint);
     blueCrystalPoint;
+    console.log(blueCrystalPoint);
     yellowCrystalPoint;
+    console.log(yellowCrystalPoint);
     greenCrystalPoint;
+    console.log(greenCrystalPoint);
+
+    //total score starts with 0
     totalScore = 0;
     $('#userScore').html(totalScore);
 }
@@ -121,6 +128,5 @@ $('#greenCrystal').on('click', function () {
         lost();
     }
 })
-
 
 
