@@ -47,7 +47,7 @@ function startUp() {
 
 //create function to tally wins
 function win() {
-    alert("You won");
+    alert("🎊 You won 🎉🏆");
     wins++;
     console.log(wins);
     $('#Wins').html(wins);
@@ -56,7 +56,7 @@ function win() {
 
 //create function to tally losses
 function lost() {
-    alert("You lost");
+    alert("👎 You lost 💀");
     losses++;
     console.log(losses);
     $('#Wins').html(wins);
