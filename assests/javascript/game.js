@@ -26,7 +26,7 @@ $('#userScore').html(totalScore);
 
 function startUp() {
     //create function to generate random number 
-    randomNumber = Math.floor(Math.random() * 120 + 18) // generating numbers between 18 and 138
+    randomNumber = Math.floor(Math.random() * 120 + 18); // generating numbers between 18 and 138
 
     //create function to generate random points for each crystal between 1 and 10
     redCrystalPoint = Math.floor(Math.random() * 9 + 1);
@@ -57,7 +57,7 @@ function win() {
     alert("🎊 You won 🎉🏆");
     wins++;
     console.log(wins);
-    $('#Wins').html(wins);
+    $('#Wins').text(wins);
     startUp();
 }
 
@@ -66,8 +66,9 @@ function lost() {
     alert("👎 You lost 💀");
     losses++;
     console.log(losses);
-    $('#Wins').html(wins);
+    $('#Losses').text(losses);
     startUp();
+    console.log("Ya better restart!")
 }
 
 //create onlick function for redcrytsal
