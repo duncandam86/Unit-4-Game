@@ -68,7 +68,6 @@ function lost() {
     console.log(losses);
     $('#Losses').text(losses);
     startUp();
-    console.log("Ya better restart!")
 }
 
 //create onlick function for redcrytsal
